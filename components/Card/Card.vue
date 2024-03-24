@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import type { Props } from "./Card.types";
 
-defineProps<Props>();
+const props = defineProps<Props>();
 </script>
 
 <template>
   <div class="card">
-    <p class="text"><span class="accentuated">id:</span>{{ id }}</p>
-    <p class="text">{{ text }}</p>
+    <p class="text"><span class="accentuated">id:</span>{{ props.id }}</p>
+    <p class="text">{{ props.text }}</p>
   </div>
 </template>
 
