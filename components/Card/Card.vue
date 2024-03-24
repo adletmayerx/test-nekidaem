@@ -7,7 +7,7 @@ const props = defineProps<Props>();
 <template>
   <div class="card">
     <p class="text"><span class="accentuated">id: </span>{{ props.id }}</p>
-    <p class="text">{{ props.text }}</p>
+    <p class="text content">{{ props.text }}</p>
   </div>
 </template>
 
@@ -17,16 +17,21 @@ const props = defineProps<Props>();
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  background-color: #030712;
-  padding: 8px;
+  background-color: #111827;
+  padding: 16px;
+  flex-grow: 1;
 
   .text {
     font-size: 14px;
-    color: #e5e7eb;
+    color: #4b5563;
 
     .accentuated {
       font-weight: bold;
       color: #e5e7eb;
+    }
+
+    &.content {
+      flex-grow: 1;
     }
   }
 }
