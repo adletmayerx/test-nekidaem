@@ -19,9 +19,12 @@ const props = defineProps<Props>();
   align-items: flex-start;
   background-color: #111827;
   padding: 16px;
+  gap: 8px;
   flex-grow: 1;
 
   .text {
+    margin: 0;
+    padding: 0;
     font-size: 14px;
     color: #4b5563;
 
@@ -31,7 +34,7 @@ const props = defineProps<Props>();
     }
 
     &.content {
-      flex-grow: 1;
+      min-height: 32px;
     }
   }
 }
