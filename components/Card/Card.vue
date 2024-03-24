@@ -6,7 +6,7 @@ const props = defineProps<Props>();
 
 <template>
   <div class="card">
-    <p class="text"><span class="accentuated">id:</span>{{ props.id }}</p>
+    <p class="text"><span class="accentuated">id: </span>{{ props.id }}</p>
     <p class="text">{{ props.text }}</p>
   </div>
 </template>
@@ -22,7 +22,7 @@ const props = defineProps<Props>();
 
   .text {
     font-size: 14px;
-    color: #1f2937;
+    color: #e5e7eb;
 
     .accentuated {
       font-weight: bold;
