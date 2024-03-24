@@ -55,7 +55,6 @@ function handleCreateCard(text: string) {}
   height: fit-content;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 8px;
   background-color: #1f2937;
 
   .list {
@@ -64,7 +63,7 @@ function handleCreateCard(text: string) {}
     flex-direction: column;
     justify-content: flex-start;
     margin: 0;
-    padding: 0;
+    padding: 8px;
     gap: 8px;
 
     .list-item {
@@ -75,6 +74,7 @@ function handleCreateCard(text: string) {}
 
   .show-form-button {
     margin-top: 8px;
+    padding: 0 8px 8px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
