@@ -15,7 +15,7 @@ const props = defineProps<Props>();
 
 <style scoped lang="scss">
 .title {
-  font-size: 24px;
+  font-size: 16px;
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
